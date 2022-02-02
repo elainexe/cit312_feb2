@@ -42,7 +42,7 @@ p {
 #wrapper .container .half {
   min-height: 300px;
   width: 100%;
-  background-color: aquamarine;
+  background-color: #ee9c08;
 }
 @media screen and (min-width: 600px) {
   #wrapper .container .half {
