@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+#wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#wrapper .container {
+  width: 100%;
+  min-height: 500px;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 600px) {
+  #wrapper .container {
+    height: 600px;
+  }
+  #wrapper .container:nth-child(3) {
+    flex-direction: row;
+  }
+}
+#wrapper .container:nth-child(4n+3) {
+  flex-direction: column-reverse;
+}
+#wrapper .container .half {
+  min-height: 300px;
+  width: 100%;
+  background-color: aquamarine;
+}
+@media screen and (min-width: 600px) {
+  #wrapper .container .half {
+    width: 50%;
+    height: 100%;
+  }
+}
+#wrapper .container .quarter {
+  min-height: 150px;
+  width: 100%;
+  background-color: aqua;
+}
+#wrapper .container .quarter:nth-child(odd) {
+  background-color: #007e7e;
+}
+@media screen and (min-width: 600px) {
+  #wrapper .container .quarter {
+    width: 50%;
+    height: 50%;
+  }
+}
+#wrapper .divider {
+  min-height: 100px;
+  background-color: palevioletred;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
